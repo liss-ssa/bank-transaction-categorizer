@@ -172,7 +172,7 @@ LLM_CONFIDENCE_THRESHOLD=0.74
 
 ## FastAPI mode
 
-The `app` container now runs as a long-lived FastAPI service instead of exiting after the CLI starts without arguments.
+Контейнер `app` теперь запускается как постоянно работающий сервис FastAPI вместо завершения после запуска CLI без аргументов.
 
 Start services:
 
@@ -185,7 +185,7 @@ Open API docs:
 - http://localhost:8000/docs
 - health check: http://localhost:8000/health
 
-Run the full offline pipeline via API:
+Запустить полный offline pipeline через API:
 
 ```bash
 curl -X POST http://localhost:8000/pipeline/all \
@@ -193,13 +193,13 @@ curl -X POST http://localhost:8000/pipeline/all \
   -d '{"rows":1000,"seed":42,"use_llm":false}'
 ```
 
-Get metrics after the job succeeds:
+Получить метрики после успешного выполнения задания:
 
 ```bash
 curl http://localhost:8000/metrics
 ```
 
-Individual endpoints:
+Отдельные endpoints:
 
 ```bash
 curl -X POST http://localhost:8000/generate \
@@ -215,7 +215,7 @@ curl -X POST http://localhost:8000/evaluate \
   -d '{}'
 ```
 
-CLI is still available inside the running container:
+Интерфейс командной строки (CLI) также доступен внутри работающего контейнера:
 
 ```bash
 docker compose exec app python -m app.main generate --rows 1000
@@ -223,7 +223,7 @@ docker compose exec app python -m app.main run --use-llm false
 docker compose exec app python -m app.main evaluate
 ```
 
-PostgreSQL is exposed on host port `5433` to avoid conflicts with local PostgreSQL on `5432`.
+Для предотвращения конфликта с локальным PostgreSQL (5432) контейнер PostgreSQL опубликован на порту 5433.
 
 ## Ограничения
 
