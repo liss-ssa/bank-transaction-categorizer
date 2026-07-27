@@ -116,34 +116,34 @@ LLM_CONFIDENCE_THRESHOLD=0.74
 
   Metric                            Value
   -------------------------- ------------
-  Accuracy                      **0.988**
-  Macro F1                     **0.9369**
-  Unknown                        **1.2%**
-  Other                          **0.0%**
-  Accuracy on bank "Other"      **96.3%**
-  Tokens                                0
+  - Accuracy                      **0.988**
+  - Macro F1                     **0.9369**
+  - Unknown                        **1.2%**
+  - Other                          **0.0%**
+  - Accuracy on bank "Other"      **96.3%**
+  - Tokens                                0
 
 ## Rules + OpenRouter fallback
 
   Metric                            Value
   -------------------------- ------------
-  Accuracy                      **0.997**
-  Macro F1                     **0.9427**
-  Unknown                        **0.3%**
-  Other                          **0.0%**
-  Accuracy on bank "Other"      **96.3%**
-  Prompt tokens                    15,732
-  Completion tokens                 7,284
-  Total tokens                 **23,016**
+  - Accuracy                      **0.997**
+  - Macro F1                     **0.9427**
+  - Unknown                        **0.3%**
+  - Other                          **0.0%**
+  - Accuracy on bank "Other"      **96.3%**
+  - Prompt tokens                    15,732
+  - Completion tokens                 7,284
+  - Total tokens                 **23,016**
 
 ## Comparison
 
   Metric        Rules   Rules + LLM
   ---------- -------- -------------
-  Accuracy      0.988     **0.997**
-  Macro F1     0.9369    **0.9427**
-  Unknown        1.2%      **0.3%**
-  Tokens            0    **23,016**
+  - Accuracy      0.988     **0.997**
+  - Macro F1     0.9369    **0.9427**
+  - Unknown        1.2%      **0.3%**
+  - Tokens            0    **23,016**
 
 ## Безопасность
 
